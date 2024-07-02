@@ -111,8 +111,9 @@ model = smp.DeepLabV3(
 
 #### 图在国内小水管阿里云服务器，可能有点卡，请老师见谅
 
-https://qianyongdeyu.top/wp-content/uploads/2024/07/metrics_plot.png
-https://qianyongdeyu.top/wp-content/uploads/2024/07/visualization_12241_33.png.png
+`https://qianyongdeyu.top/wp-content/uploads/2024/07/metrics_plot.png`
+
+`https://qianyongdeyu.top/wp-content/uploads/2024/07/visualization_12241_33.png.png`
 
 在进行冠状动脉血管造影分割任务测试时，我们使用了U-Net模型架构和ResNet34编码器。训练指标如下：
 
