@@ -1,0 +1,10 @@
+{
+    "model_name": "Unet",
+    "encoder_name": "resnet34",
+    "encoder_weights": "imagenet",
+    "in_channels": 3,
+    "classes": 1,
+    "loss_function": "BCEWithLogitsLoss",
+    "optimizer": "Adam",
+    "learning_rate": 0.001
+}
