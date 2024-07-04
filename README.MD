@@ -1,4 +1,4 @@
-# 冠状动脉血管造影分割项目
+# 冠状动脉血管造影分割项目(Gradio前端)
 
 #### 北京邮电大学 计算机9组 营员：薛文琪
 
@@ -48,10 +48,9 @@ gradio
 ```
 
 ## 训练模型
-训练脚本`train.py`用于训练分割模型。运行以下命令开始训练，之后在浏览器输入http://127.0.0.1:7860
+
 ```bash
 python train.py
---->Running on local URL:  http://127.0.0.1:7860
 ```
 
 ### 训练脚本说明
@@ -63,9 +62,10 @@ python train.py
 5. **记录训练指标**：保存每个epoch的损失值和评估指标（IoU、F1、Precision、Recall）。
 
 ## 进行预测
-预测脚本`predict.py`用于对测试图像进行预测。运行以下命令开始预测：
+预测脚本`predict.py`用于对测试图像进行预测。运行以下命令开始预测,之后在浏览器输入http://127.0.0.1:7860
 ```bash
 python predict.py
+--->Running on local URL:  http://127.0.0.1:7860
 ```
 
 ### 预测脚本说明
