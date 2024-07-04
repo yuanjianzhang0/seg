@@ -6,19 +6,16 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 from PIL import Image
-import segmentation_models_pytorch as smp
+from modelset import model
 from tqdm import tqdm
 import json
 import matplotlib.pyplot as plt
+import matplotlib
 
+matplotlib.use('Agg')
 # 定义模型
-model = smp.Unet(
-    encoder_name='resnet34',
-    encoder_weights='imagenet',
-    in_channels=3,
-    classes=1
-)
 
+num_epochs = 60
 # 定义数据集类
 class BrainTumorDataset(Dataset):
     def __init__(self, images_dir, masks_dir, transform=None):
@@ -73,7 +70,7 @@ with open(os.path.join(run_folder, "model_details.json"), "w") as f:
     json.dump(model_details, f, indent=4)
 
 # 训练模型
-num_epochs = 25
+
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model.to(device)
 
