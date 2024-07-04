@@ -20,7 +20,7 @@ seg/
 │   ├── test/
 │   │   ├── images/            # 测试图像
 │   │   └── masks/             # 测试图像对应的掩码
-│   └── predictions/           # 预测结果和指标文件
+│   └── predictions/           # 预测结果和指标文件(运行predict_v1.py，计算指标)
 │
 ├── predict.py                 # 预测脚本
 ├── requirements.txt           # Python依赖项
