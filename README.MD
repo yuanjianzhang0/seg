@@ -118,7 +118,7 @@ model = smp.DeepLabV3(
 
 ### 示例结果
 
-#### 图在国内小水管阿里云服务器，可能有点卡，请老师见谅
+#### 自建服务器图床，可能有点卡
 
 `https://qianyongdeyu.top/wp-content/uploads/2024/07/metrics_plot.png`
 
