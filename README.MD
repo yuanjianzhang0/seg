@@ -44,12 +44,14 @@ Pillow
 matplotlib
 segmentation_models_pytorch
 tqdm
+gradio
 ```
 
 ## 训练模型
-训练脚本`train.py`用于训练分割模型。运行以下命令开始训练：
+训练脚本`train.py`用于训练分割模型。运行以下命令开始训练，之后在浏览器输入http://127.0.0.1:7860
 ```bash
 python train.py
+--->Running on local URL:  http://127.0.0.1:7860
 ```
 
 ### 训练脚本说明
