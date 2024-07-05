@@ -84,7 +84,7 @@ python predict.py
 在`train.py`和`predict.py`脚本中，用户可以通过修改以下部分来选择不同的模型架构和编码器：
 
 ```python
-# 在train.py和predict.py脚本中定义模型部分
+# 在modelset.py脚本中定义模型部分
 model = smp.Unet(
     encoder_name='resnet34',      # 选择编码器，如resnet34, efficientnet-b0等
     encoder_weights='imagenet',   # 使用预训练权重
